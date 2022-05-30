@@ -1,19 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCutlery } from "@fortawesome/free-solid-svg-icons";
+
 const NavBar = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = (event) => {
+    setIsActive((current) => !current);
+  };
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      ></link>
-      <div className="navBar">
-        <a href="#home">Home</a>
-        <a href="#community">Community</a>
-        <a href="#location">Location</a>
-        <a href="#menu">Menu</a>
-        <a href="#recipies">Recipies</a>
-      </div>
+      <nav className="navbar">
+        <div className="logo">Logo</div>
+
+        <FontAwesomeIcon
+          className="toggle-button"
+          icon={faCutlery}
+          onClick={handleClick}
+        />
+        <div className={`nav-links ${isActive ? "active" : ""}`}>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#community">Community</a>
+            </li>
+            <li>
+              <a href="#location">Location</a>
+            </li>
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+            <li>
+              <a href="#recipies">Recipies</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 };

@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <Landing />
+      <Landing />
       <Community />
       <Location />
       <Menu />
       <PopularReceipes />
       <ContactUs />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
