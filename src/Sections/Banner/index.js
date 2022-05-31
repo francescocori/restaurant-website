@@ -5,10 +5,12 @@ const Banner = () => {
   return (
     <div className="banner-section">
       <div className="header">
-        <h2>THE BEST FOODIE </h2>
-        <h1>EXPERIENCE</h1>
+        <h1>
+          <span className="header-sub">THE BEST FOODIE</span>
+          <span className="header-main">EXPERIENCE</span>
+          <span className="header-location">NOW IN LONDON</span>
+        </h1>
       </div>
-      <h3 className="message">NOW IN LONDON</h3>
     </div>
   );
 };
