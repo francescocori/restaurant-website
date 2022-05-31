@@ -1,24 +1,18 @@
 import "./App.css";
-import {
-  Community,
-  Landing,
-  Location,
-  Menu,
-  PopularReceipes,
-} from "./Sections";
+import { Community, Banner, Location, Menu, PopularReceipes } from "./Sections";
 
 import { NavBar, Footer, ContactUs } from "./Components";
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Landing />
-      <Community />
+      <Banner />
+      {/* <Community />
       <Location />
       <Menu />
       <PopularReceipes />
       <ContactUs />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
