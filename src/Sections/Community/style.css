@@ -1,9 +1,8 @@
 .community-section {
   width: 100vw;
   height: 100vh;
-  background-color: salmon;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .community-message {
@@ -13,3 +12,49 @@
 .community-message h2 {
   text-transform: uppercase;
 }
+
+.box {
+  width: 6rem;
+  height: 4rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  transform: translateX(400%);
+  transition: transfotm 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translate(-400%);
+}
+
+.box .show {
+  transform: translateX(0);
+  color: red;
+}
+.show {
+  transform: translateX(0);
+  color: red;
+}
+
+/* //////////////////////////////// */
+
+/* .box {
+  width: 6rem;
+  height: 4rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  transform: translateX(400%);
+  transition: transfotm 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translate(-400%);
+}
+
+.box .show {
+  transform: translateX(0);
+  color: red;
+}
+.show {
+  transform: translateX(0);
+  color: red;
+} */

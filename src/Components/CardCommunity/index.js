@@ -1,29 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faHeart } from "@fortawesome/free-solid-svg-icons";
 import iceCream from "../../Assets/iceCream.jpeg";
 
-const CardCommunity = () => {
+const CardCommunity = ({ id, title, text, image, likes, comments }) => {
+  // const [show, setShow] = useState(false);
+
+  // useEffect(() => {
+  //   let sceenHigh = offsetY;
+  // }, []);
+  // const checkCard = () => {
+  //   if (offsetY > 300) {
+  //     setShow(true);
+  //     console.log(offsetY);
+  //   } else {
+  //     setShow(false);
+  //   }
+  // };
   return (
-    <div className="card">
+    <div className="card-community">
       <div className="card-img">
+        <img src={image} alt="food" className="img" />
+
         <div className="instagram-logo">
           <i className="fab fa-instagram"></i>
         </div>
-        {/* <img src={iceCream} alt="icecream" /> */}
       </div>
       <div className="card-message">
-        <div className="card-message-tag">@hello</div>
-        <p className="card-message-post">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </p>
-        <span className="icon">
-          <FontAwesomeIcon icon={faMessage} /> 20
-        </span>
-        <span className="icon">
-          <FontAwesomeIcon icon={faHeart} /> 15K
-        </span>
+        <div className="card-message-tag">{title}</div>
+        <p className="card-message-post">{text}</p>
+
+        <div className="icon-container">
+          <span className="icon">
+            <FontAwesomeIcon icon={faMessage} /> {comments}
+          </span>
+          <span className="icon">
+            <FontAwesomeIcon icon={faHeart} /> {likes}
+          </span>
+        </div>
       </div>
     </div>
   );
