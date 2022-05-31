@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
-      {/* <Community />
-      <Location />
+      <Community />
+      {/* <Location />
       <Menu />
       <PopularReceipes />
       <ContactUs />

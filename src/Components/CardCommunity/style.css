@@ -1,0 +1,45 @@
+.card {
+  width: 18rem;
+  height: 10rem;
+
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  background-color: white;
+}
+
+.card-img {
+  width: 50%;
+  height: 100%;
+  background-image: url(../../Assets/iceCream.jpeg);
+  background-size: cover;
+}
+
+.instagram-logo {
+  width: 25%;
+  height: 25%;
+  border: 1px solid green;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f89a76;
+}
+
+.fa-instagram {
+  font-size: 1.5rem;
+}
+.card-message {
+  width: 50%;
+  height: 100%;
+  padding: 0.5rem;
+}
+.icon {
+  font-size: 13px;
+  margin-right: 15px;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
