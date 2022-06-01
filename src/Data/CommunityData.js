@@ -1,6 +1,7 @@
 import tacos from "../Assets/tacos.jpg";
 import iceCream from "../Assets/iceCream.jpeg";
 import salad from "../Assets/salad.jpg";
+import pancake from "../Assets/pancake.jpg";
 const communityData = [
   {
     id: 1,
@@ -22,9 +23,17 @@ const communityData = [
     id: 3,
     image: salad,
     title: "@buzzfeedfood",
-    text: "Getting into the long weekend mode like vegan #pancitpalabok (📷 @jeepneynyc). Avocado salad is all I need  #avoSalad 🥑 ",
+    text: "Getting into the long weekend mode like vegan #pancitpalabok  @jeepneynyc). Avocado salad is all I need  #avoSalad 🥑 ",
     likes: "14.7k",
     comments: "60",
+  },
+  {
+    id: 4,
+    image: pancake,
+    title: "@food_lover",
+    text: "Getting into the long weekend mode #PANCAKE #pancitpalabok (📷 @jeepneynyc). is all I need  #breakfast 🥞 😍",
+    likes: "10.7k",
+    comments: "80",
   },
 ];
 export default communityData;

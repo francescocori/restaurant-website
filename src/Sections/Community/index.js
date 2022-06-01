@@ -48,37 +48,23 @@ const Community = () => {
 
   return (
     <div className="community-section">
-      <div className="community-message">
-        <h2>meet our community</h2>
-        <button>know more</button>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        {/* <h2>{offsetY}</h2>                                        try me */}
-        {/* <div
-          className={`box ${show ? "show" : ""}`}
-          // style={{ transform: `translateY(${offsetY * 0.7}px)` }}
-        >
-          hello
-        </div>
-        <div
-          className="box"
-          // style={{ transform: `translateY(-${offsetY * 0.7}px)` }}   try me
-        >
-          hello
-        </div>
-        <div
-          className="box"
-          // style={{ transform: `translateY(${offsetY * 0.7}px)` }}
-        >
-          hello
-        </div> */}
-        {communityData.map((card) => {
-          return <CardCommunity key={card.id} {...card} />;
-        })}
+      <h2>
+        meet our <br />
+        community
+      </h2>
+      <button className="main-button">know more</button>
+      <p className="community-text">
+        Lorem ipsum dolor, sit amet <br /> consectetur adipisicing elit.
+      </p>
+      {/* <h2>{offsetY}</h2>                                        try me */}
 
-        {/* <CardCommunity />
-        <CardCommunity />
-        <CardCommunity /> */}
-      </div>
+      {communityData.map((card) => {
+        return (
+          <div className="row">
+            <CardCommunity key={card.id} {...card} />
+          </div>
+        );
+      })}
     </div>
   );
 };
