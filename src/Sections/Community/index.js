@@ -50,7 +50,7 @@ const Community = () => {
     <div className="community-section">
       <h2>
         meet our <br />
-        community
+        <span>community</span>
       </h2>
       <button className="main-button">know more</button>
       <p className="community-text">

@@ -6,7 +6,7 @@ import "./style.css";
 const MenuColumn = ({ menu }) => {
   return (
     <div className="menu-column">
-      <h2>starters</h2>
+      {/* <h3>{menu[0].type}</h3>   */}
 
       {menu.map((item, index) => {
         return (

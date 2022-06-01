@@ -11,6 +11,20 @@
   font-size: 2rem;
   font-weight: 800;
 }
+.community-section h2 span {
+  position: relative;
+  z-index: 1;
+}
+
+.community-section h2 span:before {
+  border-top: 4px solid #f89a76;
+  content: "";
+  position: absolute;
+  top: 17px;
+  width: 110%;
+  z-index: -1;
+}
+
 .main-button {
   border: none;
   background-color: #f89a76;
