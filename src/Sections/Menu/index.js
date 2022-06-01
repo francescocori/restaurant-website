@@ -45,7 +45,7 @@ const Menu = () => {
   const arraySorted = sortByTypes(menu);
 
   return (
-    <div className="menu-section">
+    <div className="menu-section" id="menu">
       <div className="menu-header">
         <h2>Our Menu</h2>
         <button className="main-button">know more</button>

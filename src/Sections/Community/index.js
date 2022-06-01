@@ -47,7 +47,7 @@ const Community = () => {
   // };
 
   return (
-    <div className="community-section">
+    <div className="community-section" id="community">
       <h2>
         meet our <br />
         <span>community</span>
