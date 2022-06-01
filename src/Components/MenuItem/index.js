@@ -5,7 +5,7 @@ const MenuItem = ({ title, description, price }) => {
     <div className="menu-item">
       <h4>{title}</h4>
       <p>{description}</p>
-      <div>{price}</div>
+      <div className="price-box">£{price}</div>
     </div>
   );
 };

@@ -1,3 +1,22 @@
 .menu-item {
   width: 100%;
+  padding: 0.5rem;
+}
+.menu-item h4 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 0.7rem;
+}
+.menu-item p {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  border: 2px solid #f89a76;
+  font-weight: 700;
 }
