@@ -8,6 +8,7 @@ function App() {
       <NavBar />
       <Banner />
       <Community />
+      <Menu />
       {/* <Location />
       <Menu />
       <PopularReceipes />

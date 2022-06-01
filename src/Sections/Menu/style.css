@@ -1,0 +1,35 @@
+.menu-section {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-section h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-header button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-main {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-gap: 0.5rem;
+  margin: 0.5rem 0; */
+}
+.column {
+  height: 80vw;
+  border-left: 1px solid black;
+}
