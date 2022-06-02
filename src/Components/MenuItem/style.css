@@ -1,6 +1,6 @@
 .menu-item {
   width: 100%;
-  padding: 0.5rem;
+  padding: 2rem;
 }
 .menu-item h4 {
   text-transform: uppercase;
@@ -10,6 +10,7 @@
 .menu-item p {
   font-weight: 200;
   font-size: 0.8rem;
+  line-height: 20px;
 }
 .price-box {
   display: flex;

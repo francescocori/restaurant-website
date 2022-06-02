@@ -9,12 +9,18 @@
   border-radius: 5px;
   padding: 1rem;
   margin: 0 7rem;
+  /* transform: translateY(400%);
+  transition: transfotm 0.4s ease; */
 }
 
-.show {
+/* .card-community .show {
+  transform: translateX(0);
+} */
+
+/* .show {
   transform: translateX(0);
   color: red;
-}
+} */
 
 .card-img {
   width: 50%;

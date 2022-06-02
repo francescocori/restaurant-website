@@ -5,24 +5,26 @@ import communityData from "../../Data/CommunityData";
 
 const Community = () => {
   // const [offsetY, setOffsetY] = useState(0);
-  // const [show, setShow] = useState(false);                     try me
+  // const [show, setShow] = useState(false);
 
   // //calculate scroll
   // const handleScroll = () => {
   //   setOffsetY(window.pageYOffset);
   //   if (offsetY > 200) {
-  //     setShow(true);                                            try me
+  //     setShow(true);
   //     console.log("over 200");
   //   } else if (offsetY < 200) {
   //     setShow(false);
   //   }
   // };
 
-  //calculate scroll on page loading
   // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);           try me
+  //   window.addEventListener("scroll", handleScroll);
+  //   console.log("show", show);
+  //   if (show) {
+  //   }
   //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+  // }, [show]);
 
   // const boxes = document.querySelectorAll(".box");
   // const high = window.innerHeight;
@@ -56,7 +58,7 @@ const Community = () => {
       <p className="community-text">
         Lorem ipsum dolor, sit amet <br /> consectetur adipisicing elit.
       </p>
-      {/* <h2>{offsetY}</h2>                                        try me */}
+      {/* <h2>{offsetY}</h2> */}
 
       {communityData.map((card) => {
         return (

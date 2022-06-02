@@ -6,3 +6,4 @@ export { default as SectionTracker } from "./SectionTracker";
 export { default as Footer } from "./Footer";
 export { default as MenuItem } from "./MenuItem";
 export { default as MenuColumn } from "./MenuColumn";
+export { default as Map } from "./Map";

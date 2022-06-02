@@ -5,7 +5,6 @@ import MenuColumn from "../../Components/MenuColumn";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
-  const [menuSorted, setMenuSorted] = useState([]);
 
   const getMenuData = () => {
     axios

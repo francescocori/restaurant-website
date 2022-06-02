@@ -5,21 +5,29 @@ import { faMessage, faHeart } from "@fortawesome/free-solid-svg-icons";
 import iceCream from "../../Assets/iceCream.jpeg";
 
 const CardCommunity = ({ id, title, text, image, likes, comments }) => {
-  // const [show, setShow] = useState(false);
+  const [offsetY, setOffsetY] = useState(0);
+  const [show, setShow] = useState(false);
 
-  // useEffect(() => {
-  //   let sceenHigh = offsetY;
-  // }, []);
-  // const checkCard = () => {
-  //   if (offsetY > 300) {
-  //     setShow(true);
-  //     console.log(offsetY);
-  //   } else {
-  //     setShow(false);
-  //   }
-  // };
+  //calculate scroll
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+    if (offsetY > 200) {
+      setShow(true);
+      console.log("over 200");
+    } else if (offsetY < 200) {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    console.log("show", show);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [show]);
+
   return (
-    <div className="card-community">
+    <div className={`card-community ${show ? "show" : ""}`}>
       <div className="card-img">
         <img src={image} alt="food" className="img" />
 
@@ -38,6 +46,7 @@ const CardCommunity = ({ id, title, text, image, likes, comments }) => {
           <span className="icon">
             <FontAwesomeIcon icon={faHeart} /> {likes}
           </span>
+          {/* <p>{offsetY}</p> */}
         </div>
       </div>
     </div>
