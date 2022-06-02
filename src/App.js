@@ -1,7 +1,7 @@
 import "./App.css";
 import { Community, Banner, Location, Menu, PopularReceipes } from "./Sections";
 import React, { Component } from "react";
-import { NavBar, Footer, ContactUs, Map } from "./Components";
+import { NavBar, Footer, ContactUs, Map, Paralax } from "./Components";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <Community />
       <Map />
       <Menu />
+      <Paralax />
 
       {/* <Location />
       <Menu />
