@@ -1,9 +1,9 @@
 .card-community {
-  width: 28rem;
+  width: 30rem;
   height: 15rem;
   display: flex;
   flex-direction: row;
-  margin: 1rem;
+  /* margin: 1rem; */
   background-color: white;
   box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.46);
   border-radius: 5px;
@@ -15,12 +15,12 @@
 
 /* .card-community .show {
   transform: translateX(0);
-} */
+}
 
-/* .show {
+.show {
   transform: translateX(0);
-  color: red;
-} */
+  color: red; */
+/* } */
 
 .card-img {
   width: 50%;

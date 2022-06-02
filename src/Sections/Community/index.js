@@ -50,14 +50,17 @@ const Community = () => {
 
   return (
     <div className="community-section" id="community">
-      <h2>
-        meet our <br />
-        <span>community</span>
-      </h2>
-      <button className="main-button">know more</button>
-      <p className="community-text">
-        Lorem ipsum dolor, sit amet <br /> consectetur adipisicing elit.
-      </p>
+      <div className=" community-header">
+        <h2>
+          meet our <br />
+          <span>community</span>
+        </h2>
+        <button className="main-button">know more</button>
+        <p className="community-text">
+          Lorem ipsum dolor, sit amet <br /> consectetur adipisicing elit.
+        </p>
+      </div>
+
       {/* <h2>{offsetY}</h2> */}
 
       {communityData.map((card) => {
