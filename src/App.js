@@ -12,7 +12,8 @@ function App() {
       <Community />
       <Map />
       <Menu />
-      <Paralax />
+      <PopularReceipes />
+      {/* <Paralax /> */}
 
       {/* <Location />
       <Menu />

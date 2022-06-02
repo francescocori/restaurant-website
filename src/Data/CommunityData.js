@@ -1,7 +1,5 @@
-import tacos from "../Assets/tacos.jpg";
-import iceCream from "../Assets/iceCream.jpeg";
-import salad from "../Assets/salad.jpg";
-import pancake from "../Assets/pancake.jpg";
+import { tacos, iceCream, salad, pancake } from "../Assets";
+
 const communityData = [
   {
     id: 1,

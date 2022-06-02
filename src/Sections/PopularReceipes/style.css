@@ -1,0 +1,11 @@
+.popular-recipes-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.popular-recipes-container::-webkit-scrollbar {
+  display: none;
+}

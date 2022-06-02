@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./style.css";
 import axios from "axios";
 import MenuColumn from "../../Components/MenuColumn";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
-
+  const [offsetY, setOffsetY] = useState(0);
   const getMenuData = () => {
     axios
       .get("https://studiographene-exercise-api.herokuapp.com/foods")
@@ -42,6 +42,16 @@ const Menu = () => {
     return [starters, mains, sides, desserts];
   };
   const arraySorted = sortByTypes(menu);
+  //////////////////////////////////////////////////
+
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="menu-section" id="menu">
@@ -51,7 +61,13 @@ const Menu = () => {
       </div>
       <div className="menu-main">
         {arraySorted.map((item, index) => {
-          return <MenuColumn menu={arraySorted[index]} />;
+          return (
+            <MenuColumn
+              menu={arraySorted[index]}
+              offsetY={offsetY}
+              index={index}
+            />
+          );
         })}
       </div>
     </div>

@@ -1,0 +1,13 @@
+export { default as pineapple } from "./pineapple.jpg";
+export { default as englishBreakfast } from "./englishBreakfast.jpg";
+export { default as fetaSalad } from "./fetaSalad.jpg";
+export { default as fishAndChips } from "./fishAndChips.jpg";
+export { default as bennerImg } from "./bannerImg.jpg";
+export { default as iceCream } from "./iceCream.jpeg";
+export { default as mushroomPasta } from "./mushroomPasta.jpg";
+export { default as pancake } from "./pancake.jpg";
+export { default as pizza } from "./pizza.jpg";
+export { default as salad } from "./salad.jpg";
+export { default as tacos } from "./tacos.jpg";
+export { default as tiramisu } from "./tiramisu.jpg";
+export { default as toast } from "./toast.jpg";

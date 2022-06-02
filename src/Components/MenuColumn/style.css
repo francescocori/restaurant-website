@@ -1,6 +1,7 @@
 .menu-column {
   height: 80vw;
   border-left: 1px solid black;
+  position: relative;
 }
 .menu-column h3 {
   text-transform: uppercase;
