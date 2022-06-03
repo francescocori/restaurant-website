@@ -5,7 +5,7 @@ import MenuColumn from "../../Components/MenuColumn";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
-  const [offsetY, setOffsetY] = useState(0);
+  // const [offsetY, setOffsetY] = useState(0);
   const getMenuData = () => {
     axios
       .get("https://studiographene-exercise-api.herokuapp.com/foods")
@@ -44,14 +44,14 @@ const Menu = () => {
   const arraySorted = sortByTypes(menu);
   //////////////////////////////////////////////////
 
-  const handleScroll = () => {
-    setOffsetY(window.pageYOffset);
-  };
+  // const handleScroll = () => {
+  //   setOffsetY(window.pageYOffset);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <div className="menu-section" id="menu">
@@ -64,7 +64,7 @@ const Menu = () => {
           return (
             <MenuColumn
               menu={arraySorted[index]}
-              offsetY={offsetY}
+              // offsetY={offsetY}
               index={index}
             />
           );

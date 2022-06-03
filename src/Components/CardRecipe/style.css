@@ -30,7 +30,7 @@
   position: absolute;
   z-index: 1;
   padding: 1rem;
-  background-color: pink;
+  background-color: #f89a76;
   bottom: 0;
   right: 0;
 }
@@ -52,6 +52,7 @@
 .item-name {
   font-weight: 600;
   letter-spacing: -1px;
+  text-transform: uppercase;
 }
 .item-description {
   color: rgb(167, 164, 164);

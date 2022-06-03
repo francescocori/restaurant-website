@@ -23,7 +23,7 @@ const Map = () => {
   if (loadError) return "Error loading maps";
   if (!isLoaded) return "Loading maps";
   return (
-    <div className="map-container">
+    <div className="map-container" id="location">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

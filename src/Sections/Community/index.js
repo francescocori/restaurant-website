@@ -50,10 +50,10 @@ const Community = () => {
 
   return (
     <div className="community-section" id="community">
-      <div className=" community-header">
-        <h2>
+      <div className=" section-header">
+        <h2 className="section-title">
           meet our <br />
-          <span>community</span>
+          <span className="title-line-through">community</span>
         </h2>
         <button className="main-button">know more</button>
         <p className="community-text">

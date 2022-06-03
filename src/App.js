@@ -1,23 +1,20 @@
 import "./App.css";
-import { Community, Banner, Location, Menu, PopularReceipes } from "./Sections";
+import { Community, Banner, Menu, PopularReceipes } from "./Sections";
 import React, { Component } from "react";
-import { NavBar, Footer, ContactUs, Map, Paralax } from "./Components";
-import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import { NavBar, Footer, ContactUs, Map, SectionIndicator } from "./Components";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <SectionIndicator />
       <Banner />
       <Community />
       <Map />
       <Menu />
       <PopularReceipes />
-      {/* <Paralax /> */}
 
-      {/* <Location />
-      <Menu />
-      <PopularReceipes />
+      {/*
       <ContactUs />
       <Footer /> */}
     </div>
