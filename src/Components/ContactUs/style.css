@@ -1,0 +1,88 @@
+.contact-section {
+  width: 100vw;
+  height: 60vh;
+  background-color: salmon;
+  display: flex;
+  padding: 5rem;
+}
+.contact-text-box {
+  width: 30%;
+  height: 100%;
+}
+.contact-text {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.form-container {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  padding: 3rem;
+  margin: 1px solid black;
+}
+
+.form {
+  /* border: 1px solid black; */
+  height: 100%;
+}
+
+.form label {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: 10px;
+  margin-top: 1.5rem;
+  width: 10rem;
+}
+.form input {
+  height: 2rem;
+  width: 10rem;
+  background-color: transparent;
+  border-bottom: 1px solid black !important;
+  border-style: none;
+}
+.form select {
+  height: 2rem;
+  width: 10rem;
+  background-color: transparent;
+  border-bottom: 2px solid black !important;
+  border-style: none;
+}
+
+.form input::placeholder {
+  color: rgba(71, 69, 69, 0.269);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.submit-btn {
+  border: none;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: salmon;
+  font-weight: 600;
+  float: right;
+}
+.white-line-through {
+  position: relative;
+  z-index: 1;
+}
+
+.white-line-through::before {
+  border-top: 4px solid white;
+  content: "";
+  position: absolute;
+  top: 17px;
+  width: 110%;
+  z-index: -1;
+}

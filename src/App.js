@@ -48,7 +48,6 @@ function App() {
       <Map />
       <Menu />
       <PopularReceipes />
-
       <ContactUs />
       <Footer />
     </div>

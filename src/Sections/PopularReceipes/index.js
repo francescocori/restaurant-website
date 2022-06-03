@@ -4,7 +4,7 @@ import PopularRecipesData from "../../Data/PopularRecipesData";
 import CardRecipe from "../../Components/CardRecipe";
 const PopularReceipes = () => {
   return (
-    <div className="popular-recipes-section section" id="recipies">
+    <div className="popular-recipes section" id="recipies">
       <div className=" section-header">
         <h2 className="section-title">
           popular <br />
