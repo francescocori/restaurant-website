@@ -32,8 +32,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-.menu-main {
+.type {
+  text-transform: uppercase;
+  font-size: 2rem;
+  height: 4rem;
+  letter-spacing: -2px;
+}
+.main-content {
   width: 100vw;
   height: 80vh;
   display: grid;

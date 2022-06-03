@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
-const SectionIndicator = () => {
+const SectionIndicator = ({ isCurrentSection }) => {
   return (
     <div>
       <ul className="navigation">
-        <li className="selected">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+        <li className={`${isCurrentSection ? "selected" : ""}`}></li>
+        <li className={`${isCurrentSection ? "selected" : ""}`}></li>
+        <li className={`${isCurrentSection ? "selected" : ""}`}></li>
+        <li className={`${isCurrentSection ? "selected" : ""}`}></li>
       </ul>
     </div>
   );

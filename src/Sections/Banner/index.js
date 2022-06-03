@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-import bannerImg from "../../Assets/bannerImg2.jpg";
+
 const Banner = () => {
   return (
-    <div className="banner-section" id="home">
+    <div className="banner-section section" id="home">
       <div className="header">
         <h1>
           <span className="header-sub">THE BEST FOODIE</span>

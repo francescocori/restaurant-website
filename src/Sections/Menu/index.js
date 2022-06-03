@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import axios from "axios";
 import MenuColumn from "../../Components/MenuColumn";
@@ -42,6 +42,7 @@ const Menu = () => {
     return [starters, mains, sides, desserts];
   };
   const arraySorted = sortByTypes(menu);
+
   //////////////////////////////////////////////////
 
   // const handleScroll = () => {
@@ -52,23 +53,44 @@ const Menu = () => {
   //   window.addEventListener("scroll", handleScroll);
   //   return () => window.removeEventListener("scroll", handleScroll);
   // }, []);
-
+  const getType = (menuType) => {
+    switch (menuType) {
+      case "starters":
+        return "starters";
+      case "main_courses":
+        return "main courses";
+      case "sides":
+        return "sides";
+      case "desserts":
+        return "desserts";
+      default:
+        return null;
+    }
+  };
   return (
-    <div className="menu-section" id="menu">
+    <div className="menu-section section" id="menu">
       <div className="menu-header">
         <h2>Our Menu</h2>
         <button className="main-button">know more</button>
       </div>
-      <div className="menu-main">
-        {arraySorted.map((item, index) => {
-          return (
-            <MenuColumn
-              menu={arraySorted[index]}
-              // offsetY={offsetY}
-              index={index}
-            />
-          );
-        })}
+      <div className="main-content">
+        {arraySorted.length &&
+          arraySorted.map((item, index) => {
+            if (item.length) {
+              return (
+                <div key={index}>
+                  <h3 className="type">
+                    {getType(arraySorted[index][0].type)}
+                  </h3>
+                  <MenuColumn
+                    menu={arraySorted[index]}
+                    index={index}
+                    item={item}
+                  />
+                </div>
+              );
+            }
+          })}
       </div>
     </div>
   );

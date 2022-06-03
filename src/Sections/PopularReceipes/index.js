@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./style.css";
 import PopularRecipesData from "../../Data/PopularRecipesData";
 import CardRecipe from "../../Components/CardRecipe";
 const PopularReceipes = () => {
   return (
-    <div className="popular-recipes-section" id="recipies">
+    <div className="popular-recipes-section section" id="recipies">
       <div className=" section-header">
         <h2 className="section-title">
           popular <br />
@@ -15,7 +15,7 @@ const PopularReceipes = () => {
       <div className="horizontal-scroll">
         {PopularRecipesData.map((item) => {
           return (
-            <div>
+            <div key={item.id}>
               <CardRecipe
                 image={item.image}
                 title={item.title}
@@ -26,6 +26,10 @@ const PopularReceipes = () => {
           );
         })}
       </div>
+      {/* <div className="arrows-container">
+        <button onClick={() => handleScroll(-100)}>right</button>
+        <button onClick={() => handleScroll(100)}>left</button>
+      </div> */}
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage, faHeart } from "@fortawesome/free-solid-svg-icons";
-import iceCream from "../../Assets/iceCream.jpeg";
 
 const CardCommunity = ({ id, title, text, image, likes, comments }) => {
   const [offsetY, setOffsetY] = useState(0);

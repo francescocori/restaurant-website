@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./style.css";
 import CardCommunity from "../../Components/CardCommunity";
 import communityData from "../../Data/CommunityData";
@@ -49,7 +49,7 @@ const Community = () => {
   // };
 
   return (
-    <div className="community-section" id="community">
+    <div className="community-section section" id="community">
       <div className=" section-header">
         <h2 className="section-title">
           meet our <br />
@@ -65,8 +65,8 @@ const Community = () => {
 
       {communityData.map((card) => {
         return (
-          <div className="row">
-            <CardCommunity key={card.id} {...card} />
+          <div className="row" key={card.id}>
+            <CardCommunity {...card} />
           </div>
         );
       })}
