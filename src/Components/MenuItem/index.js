@@ -3,7 +3,6 @@ import "./style.css";
 const MenuItem = ({ title, description, price, type }) => {
   return (
     <div className="menu-item">
-      <p>{type}</p>
       <h4>{title}</h4>
       <p>{description}</p>
       <div className="price-box">£{price}</div>

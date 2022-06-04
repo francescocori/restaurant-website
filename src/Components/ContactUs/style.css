@@ -18,11 +18,9 @@
   height: 100%;
   display: inline-block;
   padding: 3rem;
-  margin: 1px solid black;
 }
 
 .form {
-  /* border: 1px solid black; */
   height: 100%;
 }
 
@@ -72,17 +70,20 @@
   color: salmon;
   font-weight: 600;
   float: right;
+  margin: 2rem;
 }
 .white-line-through {
   position: relative;
   z-index: 1;
+  font-size: 3rem;
+  letter-spacing: -3px;
 }
 
 .white-line-through::before {
   border-top: 4px solid white;
   content: "";
   position: absolute;
-  top: 17px;
+  top: 27px;
   width: 110%;
   z-index: -1;
 }

@@ -36,6 +36,10 @@ const NavBar = () => {
             <li>
               <a href="#recipies">Recipies</a>
             </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>

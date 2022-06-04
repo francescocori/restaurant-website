@@ -1,8 +1,11 @@
 import React from "react";
 import "./style.css";
 const ContactUs = () => {
+  const handleSubmit = () => {
+    alert("Thanks for contacting us! :)");
+  };
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact">
       <div className="contact-text-box">
         <div className=" contact-header">
           <h2 className="section-title">
@@ -22,32 +25,42 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="form-container">
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="input-container">
               <label for="name">name</label>
-              <input type="text" id="name" placeholder="Name"></input>
+              <input type="text" id="name" placeholder="Name" required></input>
             </div>
             <div className="input-container">
               <label for="surname">surname</label>
-              <input type="text" id="surname" placeholder="Surname"></input>
+              <input
+                type="text"
+                id="surname"
+                placeholder="Surname"
+                required
+              ></input>
             </div>
           </div>
           <div className="form-row">
             <div className="input-container">
               <label for="phone">phone</label>
-              <input type="number" id="phone" placeholder="Phone"></input>
+              <input type="tel" id="phone" placeholder="Phone" required></input>
             </div>
             <div className="input-container">
               <label for="email">email address</label>
-              <input type="email" id="email" placeholder="Email"></input>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+              ></input>
             </div>
           </div>
           <div className="form-row">
             <div className="input-container">
               <label for="experience">experience</label>
-              <select type="select">
-                <option disabled selected hidden>
+              <select name="experience" required>
+                <option disabled selected hidden value="">
                   Select
                 </option>
                 <option>Junior Willing to Learn :)</option>
@@ -56,9 +69,9 @@ const ContactUs = () => {
               </select>
             </div>
             <div className="input-container">
-              <label>where did you hear about us?</label>
-              <select>
-                <option disabled selected hidden className="option">
+              <label for="hear-about">where did you hear about us?</label>
+              <select name="hear-about" required>
+                <option disabled selected hidden value="">
                   Select
                 </option>
                 <option>Facebook</option>
@@ -67,8 +80,10 @@ const ContactUs = () => {
               </select>
             </div>
           </div>
+          <button className="submit-btn" type="submit">
+            Send
+          </button>
         </form>
-        <button className="submit-btn">Send</button>
       </div>
     </div>
   );

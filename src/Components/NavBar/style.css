@@ -1,7 +1,6 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #333;
   width: 100%;
   color: black;
   position: fixed;
@@ -30,7 +29,6 @@
 .nav-links a {
   display: block;
   text-decoration: none;
-  color: white;
   padding: 1rem;
   color: black;
   text-transform: uppercase;
