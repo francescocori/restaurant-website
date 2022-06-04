@@ -1,21 +1,26 @@
-.menu-section {
+.menu__section {
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(236, 236, 236);
 }
+.menu__header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.menu-section h2 {
+.menu__title {
   text-transform: uppercase;
   font-size: 2rem;
   position: relative;
   z-index: 1;
 }
 
-.menu-section h2:before {
+.menu__title:before {
   border-top: 4px solid #f89a76;
   content: "";
   position: absolute;
@@ -23,26 +28,26 @@
   width: 110%;
   z-index: -1;
 }
-.menu-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.menu-header button {
+
+.menu__button {
   margin-left: auto;
   margin-right: auto;
+  border: none;
+  background-color: #f89a76;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  cursor: pointer;
 }
-.type {
+
+.menu__main__content {
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.menu__type {
   text-transform: uppercase;
   font-size: 2rem;
   height: 4rem;
   letter-spacing: -2px;
-}
-.main-content {
-  width: 100vw;
-  height: 80vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* grid-gap: 0.5rem;
-  margin: 0.5rem 0; */
 }

@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "GillSans";
+  src: url("../src/Fonts/GillSans.ttc") format("ttc");
+  font-weight: normal;
+  font-style: normal;
+}
+/* /* @font-face {
+  font-family: "GillSans";
+  src: url("../src/Fonts/GillSans.ttc") format("ttc");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "DIN Condensed Bold";
+  src: url("../src/Fonts/DIN\ Condensed\ Bold.ttf") format("ttc");
+  font-weight: bold;
+  font-style: bold;
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -6,4 +26,6 @@
 body {
   margin: 0;
   padding: 0;
+  /* font-family: "DIN Condensed Bold";
+  font-family: "GillSans"; */
 }

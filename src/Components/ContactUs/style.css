@@ -1,19 +1,28 @@
-.contact-section {
+.contact__section {
   width: 100vw;
   height: 60vh;
   background-color: salmon;
   display: flex;
   padding: 5rem;
 }
-.contact-text-box {
+.contact__section__left {
   width: 30%;
   height: 100%;
 }
-.contact-text {
+
+.contact__title {
+  text-transform: uppercase;
+  text-decoration: lin;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contact__text {
   font-weight: 200;
   font-size: 0.8rem;
 }
-.form-container {
+.form__container {
   width: 70%;
   height: 100%;
   display: inline-block;
@@ -51,17 +60,17 @@
   color: rgba(71, 69, 69, 0.269);
 }
 
-.form-row {
+.contact__form__row {
   display: flex;
   justify-content: space-evenly;
 }
-.input-container {
+.input__wrapper {
   display: flex;
   flex-direction: column;
   width: 20%;
 }
 
-.submit-btn {
+.contact__form__btn {
   border: none;
   background-color: black;
   text-transform: uppercase;
@@ -72,14 +81,14 @@
   float: right;
   margin: 2rem;
 }
-.white-line-through {
+.contact__title__line__through {
   position: relative;
   z-index: 1;
   font-size: 3rem;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
 }
 
-.white-line-through::before {
+.contact__title__line__through::before {
   border-top: 4px solid white;
   content: "";
   position: absolute;

@@ -1,18 +1,26 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./style.css";
 import PopularRecipesData from "../../Data/PopularRecipesData";
 import CardRecipe from "../../Components/CardRecipe";
 const PopularReceipes = () => {
+  // const ref = useRef(!null);
+  // const handleScroll = (scrollOffset) => {
+  //   aref.current.scrollLeft += scrollOffset;
+  // };
+  // const scroll = (scrollOffset) => {
+  //   ref.current.scrollLeft += scrollOffset;
+  // };
+
   return (
-    <div className="popular-recipes section" id="recipies">
-      <div className=" section-header">
-        <h2 className="section-title">
+    <div className="recipes__section " id="recipies">
+      <div className=" recipes__header__wrapper">
+        <h2 className="recipes__title ">
           popular <br />
-          <span className="title-line-through">recipes</span>
+          <span className="recipes__title__line__through ">recipes</span>
         </h2>
-        <button className="main-button">see all</button>
+        <button className="recipes__button">see all</button>
       </div>
-      <div className="horizontal-scroll">
+      <div className="recipes__horizontal__scroll">
         {PopularRecipesData.map((item) => {
           return (
             <div key={item.id}>
@@ -27,8 +35,8 @@ const PopularReceipes = () => {
         })}
       </div>
       {/* <div className="arrows-container">
-        <button onClick={() => handleScroll(-100)}>right</button>
-        <button onClick={() => handleScroll(100)}>left</button>
+        <button onClick={() => handleScroll(-20)}>left</button>
+        <button onClick={() => handleScroll(20)}>right</button>
       </div> */}
     </div>
   );

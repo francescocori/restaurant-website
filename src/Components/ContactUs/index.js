@@ -5,15 +5,14 @@ const ContactUs = () => {
     alert("Thanks for contacting us! :)");
   };
   return (
-    <div className="contact-section" id="contact">
-      <div className="contact-text-box">
-        <div className=" contact-header">
-          <h2 className="section-title">
-            Collaborate <br />
-            <span className="white-line-through">with us</span>
-          </h2>
-        </div>
-        <p className="contact-text">
+    <div className="contact__section" id="contact">
+      <div className="contact__section__left">
+        <h2 className="contact__title">
+          Collaborate <br />
+          <span className="contact__title__line__through">with us</span>
+        </h2>
+
+        <p className="contact__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
           porro vero quia sed quo expedita, voluptate dicta soluta reiciendis!
           <br />
@@ -24,14 +23,14 @@ const ContactUs = () => {
           quidem.
         </p>
       </div>
-      <div className="form-container">
+      <div className="form__container">
         <form className="form" onSubmit={handleSubmit}>
-          <div className="form-row">
-            <div className="input-container">
+          <div className="contact__form__row">
+            <div className="input__wrapper">
               <label for="name">name</label>
               <input type="text" id="name" placeholder="Name" required></input>
             </div>
-            <div className="input-container">
+            <div className="input__wrapper">
               <label for="surname">surname</label>
               <input
                 type="text"
@@ -41,12 +40,12 @@ const ContactUs = () => {
               ></input>
             </div>
           </div>
-          <div className="form-row">
-            <div className="input-container">
+          <div className="contact__form__row">
+            <div className="input__wrapper">
               <label for="phone">phone</label>
               <input type="tel" id="phone" placeholder="Phone" required></input>
             </div>
-            <div className="input-container">
+            <div className="input__wrapper">
               <label for="email">email address</label>
               <input
                 type="email"
@@ -56,8 +55,8 @@ const ContactUs = () => {
               ></input>
             </div>
           </div>
-          <div className="form-row">
-            <div className="input-container">
+          <div className="contact__form__row">
+            <div className="input__wrapper">
               <label for="experience">experience</label>
               <select name="experience" required>
                 <option disabled selected hidden value="">
@@ -68,7 +67,7 @@ const ContactUs = () => {
                 <option>Senior</option>
               </select>
             </div>
-            <div className="input-container">
+            <div className="input__wrapper">
               <label for="hear-about">where did you hear about us?</label>
               <select name="hear-about" required>
                 <option disabled selected hidden value="">
@@ -80,7 +79,7 @@ const ContactUs = () => {
               </select>
             </div>
           </div>
-          <button className="submit-btn" type="submit">
+          <button className="contact__form__btn" type="submit">
             Send
           </button>
         </form>

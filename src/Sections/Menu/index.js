@@ -5,7 +5,7 @@ import MenuColumn from "../../Components/MenuColumn";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
-  // const [offsetY, setOffsetY] = useState(0);
+
   const getMenuData = () => {
     axios
       .get("https://studiographene-exercise-api.herokuapp.com/foods")
@@ -43,17 +43,7 @@ const Menu = () => {
   };
   const arraySorted = sortByTypes(menu);
 
-  //////////////////////////////////////////////////
-
-  // const handleScroll = () => {
-  //   setOffsetY(window.pageYOffset);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-  const getType = (menuType) => {
+  const getMenuType = (menuType) => {
     switch (menuType) {
       case "starters":
         return "starters";
@@ -68,19 +58,19 @@ const Menu = () => {
     }
   };
   return (
-    <div className="menu-section section" id="menu">
-      <div className="menu-header">
-        <h2>Our Menu</h2>
-        <button className="main-button">know more</button>
+    <div className="menu__section " id="menu">
+      <div className="menu__header__wrapper">
+        <h2 className="menu__title">Our Menu</h2>
+        <button className="menu__button">know more</button>
       </div>
-      <div className="main-content">
+      <div className="menu__main__content">
         {arraySorted.length &&
           arraySorted.map((item, index) => {
             if (item.length) {
               return (
-                <div key={index}>
-                  <h3 className="type">
-                    {getType(arraySorted[index][0].type)}
+                <div className="column" key={index}>
+                  <h3 className="menu__type">
+                    {getMenuType(arraySorted[index][0].type)}
                   </h3>
                   <MenuColumn
                     menu={arraySorted[index]}

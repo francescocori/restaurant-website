@@ -11,33 +11,33 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="navbar">
-        <div className="logo">Logo</div>
+      <nav className="nav">
+        <div className="nav__logo">Logo</div>
 
         <FontAwesomeIcon
-          className="toggle-button"
+          className="nav__icon__mobile"
           icon={faCutlery}
           onClick={handleClick}
         />
-        <div className={`nav-links ${isActive ? "active" : ""}`}>
+        <div className={`nav__links ${isActive ? "nav__link__active" : ""}`}>
           <ul>
-            <li>
+            <li className="nav__item">
               <a href="#home">Home</a>
             </li>
-            <li>
+            <li className="nav__item">
               <a href="#community">Community</a>
             </li>
-            <li>
+            <li className="nav__item">
               <a href="#location">Location</a>
             </li>
-            <li>
-              <a href="#menu">Menu</a>
+            <li className="nav__item">
+              <a href="#menu">Our Menu</a>
             </li>
-            <li>
-              <a href="#recipies">Recipies</a>
+            <li className="nav__item">
+              <a href="#recipies">Recipes</a>
             </li>
 
-            <li>
+            <li className="nav__item">
               <a href="#contact">Contact</a>
             </li>
           </ul>

@@ -1,7 +1,11 @@
 .menu-column {
-  border-left: 1px solid black;
   position: relative;
 }
 .menu-column h3 {
   text-transform: uppercase;
+}
+
+.column {
+  border-left: 1px solid black;
+  height: 100%;
 }

@@ -1,46 +1,34 @@
-.card-community {
+.card__community {
   width: 30rem;
   height: 15rem;
   display: flex;
   flex-direction: row;
-  /* margin: 1rem; */
   background-color: white;
   box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.46);
   border-radius: 5px;
   padding: 1rem;
   margin: 0 7rem;
   transition: all 0.5sec;
-  /* transform: translateY(400%);
-  transition: transfotm 0.4s ease; */
 }
 
-.card-community:hover {
+.card__community:hover {
   transform: scale(1.2);
 }
 
-/* .card-community .show {
-  transform: translateX(0);
-}
-
-.show {
-  transform: translateX(0);
-  color: red; */
-/* } */
-
-.card-img {
+.card__img__wrapper {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
-.img {
+.card__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: relative;
 }
 
-.instagram-logo {
+.card__instagram__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,17 +39,23 @@
   padding: 3px;
 }
 
-.card-message {
+.card__message__wrapper {
   width: 50%;
   height: 100%;
   padding: 0.5rem;
   font-size: 1rem;
 }
 
-.card-message-tag {
+.card__title {
   font-weight: 600;
 }
-.icon {
+.card__icon_wrapper {
+  width: 100%;
+  display: flex;
+  align-content: flex-end;
+  position: relative;
+}
+.card_social_icon {
   font-size: 13px;
   margin-right: 15px;
 }
@@ -71,15 +65,8 @@ img {
   width: auto;
 }
 
-.icon-container {
-  width: 100%;
-  display: flex;
-  align-content: flex-end;
-  position: relative;
-}
-
 @media (max-width: 768px) {
-  .card-message {
+  .card_text {
     padding: 0.5rem;
     font-size: 0.8rem;
   }
