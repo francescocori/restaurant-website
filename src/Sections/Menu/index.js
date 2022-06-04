@@ -68,7 +68,7 @@ const Menu = () => {
           arraySorted.map((item, index) => {
             if (item.length) {
               return (
-                <div className="column" key={index}>
+                <div className="menu__column" key={index}>
                   <h3 className="menu__type">
                     {getMenuType(arraySorted[index][0].type)}
                   </h3>

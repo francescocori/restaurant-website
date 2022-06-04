@@ -1,11 +1,9 @@
 import React from "react";
 import MenuItem from "../MenuItem";
 
-import "./style.css";
-
-const MenuColumn = ({ menu, offsetY, index, item, menu2 }) => {
+const MenuColumn = ({ menu }) => {
   return (
-    <div className="menu-column">
+    <div>
       {menu.length &&
         menu.map((item, index) => {
           return (

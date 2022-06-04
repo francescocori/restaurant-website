@@ -55,7 +55,7 @@
   align-content: flex-end;
   position: relative;
 }
-.card_social_icon {
+.card__social__icon {
   font-size: 13px;
   margin-right: 15px;
 }

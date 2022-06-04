@@ -1,6 +1,5 @@
 .recipes__section {
   height: 100vh;
-  border: 4px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -46,6 +45,3 @@
 .recipes__horizontal__scroll::-webkit-scrollbar {
   display: none;
 }
-/* .arrows-container {
-  display: inline-block;
-} */

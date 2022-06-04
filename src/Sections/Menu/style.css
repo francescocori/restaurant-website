@@ -51,3 +51,7 @@
   height: 4rem;
   letter-spacing: -2px;
 }
+.menu__column {
+  border-left: 1px solid black;
+  height: 100%;
+}

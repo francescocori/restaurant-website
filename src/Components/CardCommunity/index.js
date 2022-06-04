@@ -27,7 +27,7 @@ const CardCommunity = ({ title, text, image, likes, comments }) => {
           <span className="card_social_icon">
             <FontAwesomeIcon icon={faMessage} /> {comments}
           </span>
-          <span className="card_social_icon">
+          <span className="card__social__icon">
             <FontAwesomeIcon icon={faHeart} /> {likes}
           </span>
         </div>

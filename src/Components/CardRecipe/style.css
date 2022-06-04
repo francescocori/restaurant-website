@@ -28,7 +28,7 @@
   background-color: rgba(0, 0, 0, 0.288);
   text-align: center;
 }
-.recipe__arrow-back {
+.recipe__arrow__back {
   display: flex;
   justify-content: center;
   align-items: center;

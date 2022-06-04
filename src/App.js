@@ -1,6 +1,6 @@
 import "./App.css";
 import { Community, Banner, Menu, PopularReceipes } from "./Sections";
-import React, { useState } from "react";
+import React from "react";
 import { NavBar, Footer, ContactUs, Map, SectionIndicator } from "./Components";
 
 function App() {
@@ -40,9 +40,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <SectionIndicator
-      // isCurrentSection={isCurrentSection}
-      />
+      {/* <SectionIndicator /> */}
       <Banner />
       <Community />
       <Map />

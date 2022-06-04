@@ -7,5 +7,5 @@ export { default as Footer } from "./Footer";
 export { default as MenuItem } from "./MenuItem";
 export { default as MenuColumn } from "./MenuColumn";
 export { default as Map } from "./Map";
-export { default as Paralax } from "./Paralax";
 export { default as CardRecipe } from "./CardRecipe";
+export { default as FooterColumn } from "./FooterColumn";

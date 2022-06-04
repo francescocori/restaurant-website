@@ -1,9 +1,11 @@
 import React from "react";
 import "./style.css";
+
 const ContactUs = () => {
   const handleSubmit = () => {
     alert("Thanks for contacting us! :)");
   };
+
   return (
     <div className="contact__section" id="contact">
       <div className="contact__section__left">
@@ -23,7 +25,7 @@ const ContactUs = () => {
           quidem.
         </p>
       </div>
-      <div className="form__container">
+      <div className="contact__section__right">
         <form className="form" onSubmit={handleSubmit}>
           <div className="contact__form__row">
             <div className="input__wrapper">

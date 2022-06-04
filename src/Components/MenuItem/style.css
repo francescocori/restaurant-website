@@ -1,18 +1,18 @@
-.menu-item {
+.menu__item {
   width: 100%;
   padding: 2rem;
 }
-.menu-item h4 {
+.item__title {
   text-transform: uppercase;
   letter-spacing: -1px;
   font-size: 0.7rem;
 }
-.menu-item p {
+.item__description {
   font-weight: 200;
   font-size: 0.8rem;
   line-height: 20px;
 }
-.price-box {
+.item__price {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 const CardRecipe = ({ image, text, title, serving }) => {
   return (
     <div className="card__recipe ">
@@ -12,7 +13,7 @@ const CardRecipe = ({ image, text, title, serving }) => {
             <span>{serving}</span> <br /> Serving
           </div>
         </div>
-        <div className="recipe__arrow-back">
+        <div className="recipe__arrow__back">
           <FontAwesomeIcon icon={faArrowRight} />
         </div>
       </div>
