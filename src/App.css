@@ -23,3 +23,32 @@ body {
   /* font-family: "DIN Condensed Bold";
   font-family: "GillSans"; */
 }
+.section__title {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  font-size: var(--font-size-XL);
+  font-weight: 700;
+}
+
+.title__line__through {
+  position: relative;
+  z-index: 1;
+}
+
+.title__line__through:before {
+  border-top: 4px solid var(--primary-color);
+  content: "";
+  position: absolute;
+  top: 17px;
+  width: 110%;
+  z-index: -1;
+}
+
+.main__button {
+  border: none;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  padding: 0.5rem;
+  cursor: pointer;
+}

@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f89a76;
+  background-color: var(--primary-color);
   font-size: 2rem;
   position: absolute;
   z-index: 1;

@@ -7,11 +7,11 @@ const Community = () => {
   return (
     <div className="community__section section" id="community">
       <div className=" community__header__wrapper">
-        <h2 className="community__title">
+        <h2 className="section__title">
           meet our <br />
-          <span className="community__title__line__through">community</span>
+          <span className="title__line__through">community</span>
         </h2>
-        <button className="community__title__button">know more</button>
+        <button className="main__button">know more</button>
         <p className="community__title__text">
           Lorem ipsum dolor, sit amet <br /> consectetur adipisicing elit.
         </p>

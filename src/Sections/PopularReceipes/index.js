@@ -14,11 +14,11 @@ const PopularReceipes = () => {
   return (
     <div className="recipes__section " id="recipies">
       <div className=" recipes__header__wrapper">
-        <h2 className="recipes__title ">
+        <h2 className="section__title ">
           popular <br />
-          <span className="recipes__title__line__through ">recipes</span>
+          <span className="title__line__through">recipes</span>
         </h2>
-        <button className="recipes__button">see all</button>
+        <button className="main__button">see all</button>
       </div>
       <div className="recipes__horizontal__scroll">
         {PopularRecipesData.map((item) => {

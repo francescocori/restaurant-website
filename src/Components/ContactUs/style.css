@@ -1,7 +1,7 @@
 .contact__section {
   width: 100vw;
   height: 60vh;
-  background-color: salmon;
+  background-color: var(--primary-color);
   display: flex;
   padding: 5rem;
 }
@@ -15,7 +15,7 @@
   text-decoration: lin;
   letter-spacing: -1px;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: var(--font-size-XL);
   font-weight: 700;
 }
 .contact__text {
@@ -76,7 +76,7 @@
   text-transform: uppercase;
   padding: 0.5rem;
   cursor: pointer;
-  color: salmon;
+  color: var(--primary-color);
   font-weight: 600;
   float: right;
   margin: 2rem;

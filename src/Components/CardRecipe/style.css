@@ -36,7 +36,7 @@
   position: absolute;
   z-index: 1;
   padding: 1rem;
-  background-color: #f89a76;
+  background-color: var(--primary-color);
   bottom: 0;
   right: 0;
 }

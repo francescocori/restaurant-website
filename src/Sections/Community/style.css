@@ -7,35 +7,6 @@
   padding-left: 5rem;
 }
 
-.community__title {
-  text-transform: uppercase;
-  text-decoration: lin;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 700;
-}
-.community__title__line__through {
-  position: relative;
-  z-index: 1;
-}
-
-.community__title__line__through:before {
-  border-top: 4px solid #f89a76;
-  content: "";
-  position: absolute;
-  top: 17px;
-  width: 110%;
-  z-index: -1;
-}
-
-.community__title__button {
-  border: none;
-  background-color: #f89a76;
-  text-transform: uppercase;
-  padding: 0.5rem;
-  cursor: pointer;
-}
 .community__title__text {
   text-transform: uppercase;
   font-weight: 600;

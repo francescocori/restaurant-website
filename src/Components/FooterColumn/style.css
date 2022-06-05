@@ -5,7 +5,7 @@
 }
 .footer__column__header {
   text-transform: uppercase;
-  color: salmon;
+  color: var(--primary-color);
 }
 .column__list__items {
   justify-content: space-evenly;

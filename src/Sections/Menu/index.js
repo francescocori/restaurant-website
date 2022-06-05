@@ -60,8 +60,8 @@ const Menu = () => {
   return (
     <div className="menu__section " id="menu">
       <div className="menu__header__wrapper">
-        <h2 className="menu__title">Our Menu</h2>
-        <button className="menu__button">know more</button>
+        <h2 className="section__title title__line__through">Our Menu</h2>
+        <button className="main__button">know more</button>
       </div>
       <div className="menu__main__content">
         {arraySorted.length &&
