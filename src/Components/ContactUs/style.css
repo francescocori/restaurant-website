@@ -40,18 +40,12 @@
   margin-top: 1.5rem;
   width: 10rem;
 }
-.form input {
-  height: 2rem;
-  width: 10rem;
-  background-color: transparent;
-  border-bottom: 1px solid black !important;
-  border-style: none;
-}
+.form input,
 .form select {
   height: 2rem;
   width: 10rem;
   background-color: transparent;
-  border-bottom: 2px solid black !important;
+  border-bottom: 1px solid black !important;
   border-style: none;
 }
 

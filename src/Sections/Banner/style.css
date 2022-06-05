@@ -20,7 +20,7 @@
   text-transform: uppercase;
 }
 .benner__title__sub {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
 }
 
 .benner__title__main {
@@ -28,6 +28,7 @@
   font-size: 3.75rem;
   font-weight: 500;
   letter-spacing: 0.3rem;
+  font-weight: 600;
 }
 
 .benner__title__location {
