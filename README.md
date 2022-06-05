@@ -1,8 +1,9 @@
 # Restaurant Web Page 🍭  🍲  🍰 🍕
 
 This is a prototype for a restaurant webpage with Community, Menu and Recipes sections.
-The project is created with [ReactJS](https://reactjs.org/), the map is loaded from https://snazzymaps.com/ , and the menu is display from a third party API.
-I hope you enjoy! 
+The project is created with [ReactJS](https://reactjs.org/), the map is loaded from https://snazzymaps.com/ , and the menu is display from a third party API. 
+
+I hope you enjoy! :)
 
 ### Click [here](https://foodiemania.netlify.app/) to see the app running.
 
