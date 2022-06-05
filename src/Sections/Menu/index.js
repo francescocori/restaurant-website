@@ -75,6 +75,8 @@ const Menu = () => {
                   <MenuColumn menu={item} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
       </div>
