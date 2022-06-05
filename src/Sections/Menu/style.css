@@ -36,4 +36,7 @@
   .menu__section {
     height: 100%;
   }
+  .menu__type {
+    margin-bottom: 0;
+  }
 }
