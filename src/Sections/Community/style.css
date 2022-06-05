@@ -24,10 +24,20 @@
 }
 
 @media (max-width: 768px) {
-  .row {
-    width: 100vw;
-    height: 30vh;
+  .community__section {
     display: flex;
-    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .community__section__row {
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+  }
+
+  .community__section__row:nth-of-type(even) {
+    width: 100%;
+    flex-direction: row;
   }
 }

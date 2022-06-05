@@ -104,5 +104,9 @@
   .contact__section {
     display: flex;
     flex-direction: column;
+    height: 100%;
+  }
+  .contact__form__row {
+    flex-direction: column;
   }
 }

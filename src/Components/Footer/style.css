@@ -80,4 +80,9 @@
   .footer {
     height: 5rem;
   }
+
+  .footer__social__icons ul {
+    width: 60%;
+    justify-content: flex-start;
+  }
 }

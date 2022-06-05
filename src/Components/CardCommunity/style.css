@@ -11,10 +11,6 @@
   transition: all 0.5sec;
 }
 
-.card__community:hover {
-  transform: scale(1.2);
-}
-
 .card__img__wrapper {
   width: 50%;
   height: 100%;
@@ -70,7 +66,20 @@ img {
     padding: 0.5rem;
     font-size: 0.8rem;
   }
-  .card__social__icon {
-    display: none;
+
+  .card__community {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .card__img__wrapper {
+    width: 100%;
+  }
+  .card__message__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
   }
 }
