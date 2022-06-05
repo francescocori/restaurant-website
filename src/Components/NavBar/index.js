@@ -43,7 +43,7 @@ const NavBar = () => {
           </ul>
           <div className="nav__items_right">
             <a href="#contact">Contact</a>
-            <a href="#">Login</a>
+            <a href="#home">Login</a>
           </div>
         </div>
       </nav>

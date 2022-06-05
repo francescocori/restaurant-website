@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__left__side">
-        {FooterData.map((section) => {
-          return <FooterColumn Section={section.section} />;
+        {FooterData.map((section, index) => {
+          return <FooterColumn Section={section.section} key={index} />;
         })}
       </div>
       <div className="footer__right__side">

@@ -29,11 +29,11 @@ const ContactUs = () => {
         <form className="form" onSubmit={handleSubmit}>
           <div className="contact__form__row">
             <div className="input__wrapper">
-              <label for="name">name</label>
+              <label htmlFor="name">name</label>
               <input type="text" id="name" placeholder="Name" required></input>
             </div>
             <div className="input__wrapper">
-              <label for="surname">surname</label>
+              <label htmlFor="surname">surname</label>
               <input
                 type="text"
                 id="surname"
@@ -44,11 +44,11 @@ const ContactUs = () => {
           </div>
           <div className="contact__form__row">
             <div className="input__wrapper">
-              <label for="phone">phone</label>
+              <label htmlFor="phone">phone</label>
               <input type="tel" id="phone" placeholder="Phone" required></input>
             </div>
             <div className="input__wrapper">
-              <label for="email">email address</label>
+              <label htmlFor="email">email address</label>
               <input
                 type="email"
                 id="email"
@@ -59,9 +59,9 @@ const ContactUs = () => {
           </div>
           <div className="contact__form__row">
             <div className="input__wrapper">
-              <label for="experience">experience</label>
-              <select name="experience" required>
-                <option disabled selected hidden value="">
+              <label htmlFor="experience">experience</label>
+              <select name="experience" required defaultValue={"default"}>
+                <option disabled hidden value="default">
                   Select
                 </option>
                 <option>Junior Willing to Learn :)</option>
@@ -70,9 +70,9 @@ const ContactUs = () => {
               </select>
             </div>
             <div className="input__wrapper">
-              <label for="hear-about">where did you hear about us?</label>
-              <select name="hear-about" required>
-                <option disabled selected hidden value="">
+              <label htmlFor="hear-about">where did you hear about us?</label>
+              <select name="hear-about" required defaultValue={"default"}>
+                <option disabled hidden value="default">
                   Select
                 </option>
                 <option>Facebook</option>
