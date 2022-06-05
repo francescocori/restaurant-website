@@ -15,7 +15,6 @@
 
 .menu__main__content {
   width: 100vw;
-  height: 70vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

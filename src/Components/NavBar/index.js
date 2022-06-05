@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCutlery } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [showMobileNavLink, setShowMobileNavLink] = useState(false);
 
   const handleClick = (event) => {
-    setIsActive((current) => !current);
+    setShowMobileNavLink((current) => !current);
   };
   return (
     <>
@@ -21,7 +21,7 @@ const NavBar = () => {
         />
         <div
           className={`nav__links__wrapper ${
-            isActive ? "nav__link__active" : ""
+            showMobileNavLink ? "nav__link__mobile" : ""
           }`}
         >
           <ul>

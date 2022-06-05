@@ -11,7 +11,12 @@ const Footer = () => {
         })}
       </div>
       <div className="footer__right__side">
-        <h2>This is the Logo</h2>
+        <div className="footer__title__wrapper">
+          <h2 className="footer__title ">
+            This is the <span className="footer__logo">Logo</span>
+          </h2>
+        </div>
+
         <div className="footer__social__icons">
           <ul>
             <li>
