@@ -12,14 +12,18 @@ const NavBar = () => {
   return (
     <>
       <nav className="nav">
-        <div className="nav__logo">Logo</div>
+        <h2 className="nav__logo">Logo</h2>
 
         <FontAwesomeIcon
           className="nav__icon__mobile"
           icon={faCutlery}
           onClick={handleClick}
         />
-        <div className={`nav__links ${isActive ? "nav__link__active" : ""}`}>
+        <div
+          className={`nav__links__wrapper ${
+            isActive ? "nav__link__active" : ""
+          }`}
+        >
           <ul>
             <li className="nav__item">
               <a href="#home">Home</a>
@@ -36,11 +40,11 @@ const NavBar = () => {
             <li className="nav__item">
               <a href="#recipies">Recipes</a>
             </li>
-
-            <li className="nav__item">
-              <a href="#contact">Contact</a>
-            </li>
           </ul>
+          <div className="nav__items_right">
+            <a href="#contact">Contact</a>
+            <a href="#">Login</a>
+          </div>
         </div>
       </nav>
     </>
