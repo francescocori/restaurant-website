@@ -1,4 +1,4 @@
-# Restaurant Web Page ☀️    🍲  🍰 🍕
+# Restaurant Web Page 🍭  🍲  🍰 🍕
 
 This is a prototype for a restaurant webpage with Community, Menu and Recipes sections.
 The project is created with ReactJS, the map is loaded from https://snazzymaps.com/ , and the menu is display from a third party API.
