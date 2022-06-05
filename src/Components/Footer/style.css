@@ -84,5 +84,8 @@
   .footer__social__icons ul {
     width: 60%;
     justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
   }
 }

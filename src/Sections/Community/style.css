@@ -40,4 +40,7 @@
     width: 100%;
     flex-direction: row;
   }
+  .community__header__wrapper {
+    padding: 0;
+  }
 }
