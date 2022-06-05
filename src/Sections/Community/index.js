@@ -5,7 +5,7 @@ import communityData from "../../Data/CommunityData";
 
 const Community = () => {
   return (
-    <div className="community__section section" id="community">
+    <div className="community__section" id="community">
       <div className=" community__header__wrapper">
         <h2 className="section__title">
           meet our <br />

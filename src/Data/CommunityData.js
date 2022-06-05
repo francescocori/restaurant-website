@@ -29,7 +29,7 @@ const communityData = [
     id: 4,
     image: pancake,
     title: "@food_lover",
-    text: "Getting into the long weekend mode #PANCAKE #pancitpalabok (📷 @jeepneynyc). is all I need  #breakfast 🥞 😍",
+    text: "Getting into the long weekend mode #PANCAKE #pancitpalabok (📷 @jeepneynyc). is all I need  #breakfast  😍",
     likes: "10.7k",
     comments: "80",
   },

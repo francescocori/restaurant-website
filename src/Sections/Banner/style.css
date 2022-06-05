@@ -1,6 +1,5 @@
 .banner__section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -10,10 +9,10 @@
       rgba(170, 165, 148, 0.8)
     ),
     url(../../Assets/bannerImg2.jpg);
+
   background-size: cover;
   background-position: top;
   color: white;
-  font-family: "Gill Sans";
 }
 
 .banner__header__wrapper {
@@ -21,17 +20,17 @@
   text-transform: uppercase;
 }
 .benner__title__sub {
-  letter-spacing: 8px;
+  letter-spacing: 0.5rem;
 }
 
 .benner__title__main {
   display: block;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 0.3rem;
 }
 
 .benner__title__location {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }

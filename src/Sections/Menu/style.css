@@ -1,7 +1,6 @@
 .menu__section {
   width: 100vw;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,10 +23,7 @@
   height: 4rem;
   letter-spacing: -2px;
 }
-.menu__column {
+.menu__column__wrapper {
   border-left: 1px solid black;
   height: 100%;
-}
-
-@media (max-width: 768px) {
 }

@@ -48,7 +48,7 @@
   color: rgb(190, 186, 186);
   text-transform: uppercase;
   letter-spacing: -1px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1rem;
   font-size: 0.7rem;
 }
@@ -61,4 +61,7 @@
 .recipe__text {
   color: rgb(167, 164, 164);
   font-size: 0.9rem;
+}
+.recipe__servings__wrapper div span {
+  font-size: 1.5rem;
 }

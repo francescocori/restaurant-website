@@ -21,7 +21,7 @@ const Menu = () => {
     getMenuData();
   }, []);
 
-  const sortByTypes = (menu) => {
+  const sortMenuByTypes = (menu) => {
     const starters = [];
     const mains = [];
     const sides = [];
@@ -41,7 +41,7 @@ const Menu = () => {
 
     return [starters, mains, sides, desserts];
   };
-  const arraySorted = sortByTypes(menu);
+  const menuTypesArray = sortMenuByTypes(menu);
 
   const getMenuType = (menuType) => {
     switch (menuType) {
@@ -64,19 +64,15 @@ const Menu = () => {
         <button className="main__button">know more</button>
       </div>
       <div className="menu__main__content">
-        {arraySorted.length &&
-          arraySorted.map((item, index) => {
+        {menuTypesArray.length &&
+          menuTypesArray.map((item, index) => {
             if (item.length) {
               return (
-                <div className="menu__column" key={index}>
+                <div className="menu__column__wrapper" key={index}>
                   <h3 className="menu__type">
-                    {getMenuType(arraySorted[index][0].type)}
+                    {getMenuType(menuTypesArray[index][0].type)}
                   </h3>
-                  <MenuColumn
-                    menu={arraySorted[index]}
-                    index={index}
-                    item={item}
-                  />
+                  <MenuColumn menu={item} />
                 </div>
               );
             }

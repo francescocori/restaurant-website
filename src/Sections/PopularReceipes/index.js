@@ -1,16 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "./style.css";
+import { CardRecipe } from "../../Components";
 import PopularRecipesData from "../../Data/PopularRecipesData";
-import CardRecipe from "../../Components/CardRecipe";
-const PopularReceipes = () => {
-  // const ref = useRef(!null);
-  // const handleScroll = (scrollOffset) => {
-  //   aref.current.scrollLeft += scrollOffset;
-  // };
-  // const scroll = (scrollOffset) => {
-  //   ref.current.scrollLeft += scrollOffset;
-  // };
 
+const PopularReceipes = () => {
   return (
     <div className="recipes__section " id="recipies">
       <div className=" recipes__header__wrapper">
@@ -34,10 +27,6 @@ const PopularReceipes = () => {
           );
         })}
       </div>
-      {/* <div className="arrows-container">
-        <button onClick={() => handleScroll(-20)}>left</button>
-        <button onClick={() => handleScroll(20)}>right</button>
-      </div> */}
     </div>
   );
 };

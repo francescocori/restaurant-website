@@ -1,5 +1,4 @@
 .recipes__section {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -14,7 +13,6 @@
   flex-direction: row;
   gap: 1rem;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
 }
 .recipes__horizontal__scroll::-webkit-scrollbar {
   display: none;
