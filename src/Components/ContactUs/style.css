@@ -96,3 +96,20 @@
   width: 110%;
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .contact__text {
+    display: none;
+  }
+  .contact__title__line__through {
+    font-size: 1rem;
+  }
+  .contact__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .contact__section {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -21,3 +21,10 @@
   border: 2px solid #f89a76;
   font-weight: 700;
 }
+
+@media (max-width: 768px) {
+  .menu__item {
+    width: 100%;
+    padding: 0.2rem;
+  }
+}

@@ -1,7 +1,5 @@
 .footer__column {
   width: 8rem;
-
-  border: 1px solid black;
 }
 .footer__column__header {
   text-transform: uppercase;
@@ -18,19 +16,4 @@
   list-style-type: none;
   margin: none;
   margin-bottom: 1rem;
-}
-.footer__social__icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 3;
-  border: 1px solid black;
-  bottom: 0;
-  right: 0;
-}
-
-.footer__social__icons li {
-  list-style-type: none;
-  display: inline;
-  margin-left: 1rem;
 }
