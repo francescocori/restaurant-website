@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 .recipes__horizontal__scroll::-webkit-scrollbar {
   display: none;

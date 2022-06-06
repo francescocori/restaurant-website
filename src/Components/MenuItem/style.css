@@ -10,7 +10,7 @@
 .item__description {
   font-weight: 200;
   font-size: 0.8rem;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 .item__price {
   display: flex;
