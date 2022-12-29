@@ -2,24 +2,82 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import axios from "axios";
 import MenuColumn from "../../Components/MenuColumn";
-
+import menu from "../../Data/MenuData";
 const Menu = () => {
-  const [menu, setMenu] = useState([]);
+  // const menu = [
+  //   {
+  //     id: 12,
+  //     title: "pizza",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "starters",
+  //   },
+  //   {
+  //     id: 13,
+  //     title: "pizzaz",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "main_courses",
+  //   },
+  //   {
+  //     id: 14,
+  //     title: "pizza",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "sides",
+  //   },
+  //   {
+  //     id: 15,
+  //     title: "pizzaz",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "desserts",
+  //   },
+  //   {
+  //     id: 1233,
+  //     title: "pizza",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "starters",
+  //   },
+  //   {
+  //     id: 133,
+  //     title: "pizzaz",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "main_courses",
+  //   },
+  //   {
+  //     id: 141,
+  //     title: "pizza",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "sides",
+  //   },
+  //   {
+  //     id: 151,
+  //     title: "pizzaz",
+  //     description: "asdasd",
+  //     price: 99,
+  //     type: "desserts",
+  //   },
+  // ];
 
-  const getMenuData = () => {
-    axios
-      .get("https://studiographene-exercise-api.herokuapp.com/foods")
-      .then((res) => {
-        setMenu((prevMenu) => {
-          return res.data;
-        });
-      })
-      .catch((err) => console.log(err));
-  };
+  console.log("hello");
+  // const getMenuData = () => {
+  //   axios
+  //     .get("https://studiographene-exercise-api.herokuapp.com/foods")
+  //     .then((res) => {
+  //       setMenu((prevMenu) => {
+  //         return res.data;
+  //       });
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
 
-  useEffect(() => {
-    getMenuData();
-  }, []);
+  // useEffect(() => {
+  //   getMenuData();
+  // }, []);
 
   const sortMenuByTypes = (menu) => {
     const starters = [];

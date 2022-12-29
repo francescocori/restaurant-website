@@ -105,8 +105,16 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
   }
   .contact__form__row {
     flex-direction: column;
+  }
+  .contact__section__right {
+    width: 100%;
+    height: 100%;
+  }
+  .contact__section__left {
+    width: 100%;
   }
 }

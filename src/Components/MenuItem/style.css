@@ -5,7 +5,7 @@
 .item__title {
   text-transform: uppercase;
   letter-spacing: -1px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 .item__description {
   font-weight: 200;
@@ -25,6 +25,6 @@
 @media (max-width: 768px) {
   .menu__item {
     width: 100%;
-    padding: 0.2rem;
+    padding: 0 1rem;
   }
 }

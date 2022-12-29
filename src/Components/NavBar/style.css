@@ -7,6 +7,7 @@
   top: 0;
   z-index: 2;
   letter-spacing: -2px;
+  background-color: #f89a76;
 }
 
 .nav__logo {
@@ -36,7 +37,6 @@
   letter-spacing: -1px;
 }
 .nav__items_right {
-  display: inline-block;
   display: flex;
 }
 .nav__item {
@@ -50,12 +50,10 @@
   width: 1.5rem;
   height: 1.5rem;
   display: none;
+  padding: 0 1rem;
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
   .nav__logo {
     left: 0;
     top: 0;
