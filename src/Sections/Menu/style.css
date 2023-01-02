@@ -19,8 +19,8 @@
 }
 .menu__type {
   text-transform: uppercase;
-  font-size: 2rem;
-  height: 4rem;
+  font-size: 1.5rem;
+  /* height: 4rem; */
   letter-spacing: -2px;
   padding: 0 1rem;
 }

@@ -39,6 +39,7 @@
   font-size: 0.6rem;
   margin-top: 1.5rem;
   width: 10rem;
+  padding-bottom: 0.5rem;
 }
 .form input,
 .form select {
